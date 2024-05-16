@@ -39,3 +39,20 @@ if (person.hasOwnProperty(key)){
 }
 }
 
+const myObject = {
+    prop1: 'value1',
+    prop2: 'value2',
+    prop3: 'value3'
+  };
+  
+ 
+  for (let propName in myObject) {
+    
+    if (myObject.hasOwnProperty(propName)) {
+      
+      console.log(`Property name: ${propName}, Value: ${myObject[propName]}`);
+      
+    }
+  }
+  
+
