@@ -54,5 +54,9 @@ const myObject = {
       
     }
   }
+//   Question no 5
+var obj = {
+  
+}
   
 
