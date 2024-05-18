@@ -54,9 +54,44 @@ const myObject = {
       
     }
   }
-//   Question no 5
-var obj = {
+  // Question no 5
+  let obj1 = { a: 1 };
+  let obj2 = { a: 1 };
+  let obj3 = obj1;
   
+  console.log(obj1 === obj2);
+  console.log(obj1 === obj3); 
+
+  function areSameObject(obj1, obj2) {
+    return obj1 === obj2;
 }
+
+let objA = { a: 1 };
+let objB = { a: 1 };
+let objC = objA;
+
+console.log(areSameObject(objA, objB));
+console.log(areSameObject(objA, objC)); 
+//  Question no 6:-
+let person1 = {
+  namee:"mueed",
+  age:18,
+  address:{
+    street: "123 main st",
+    city : "jaranwala",
+    country:{
+     name: "pakistan",
+     postalcode:37250
+    }
+  },
+  hobbies:["reading","coding"]
+
+};
+console.log(person1);
+
+
+
+
+
   
 
