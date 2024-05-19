@@ -87,7 +87,9 @@ let person1 = {
   hobbies:["reading","coding"]
 
 };
-console.log(person1);
+console.log(person1.nestedobject.properites);
+
+
 
 
 
