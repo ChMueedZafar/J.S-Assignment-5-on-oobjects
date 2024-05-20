@@ -87,13 +87,28 @@ let person1 = {
   hobbies:["reading","coding"]
 
 };
-console.log(person1.nestedobject.properites);
+console.log("street",person1.address.street);
+console.log("city",person1.address.city);
 
+person1.address.street="5 main str";
+person1.address.city="faislabad";
+console.log(person1.address.street);
+console.log(person1.address.city);
 
+// Question No 7:-
 
-
-
-
-
+function person (name,age){
+  this.name =name;
+  this.age= age;
+}
+let person1 = new person("mueed",18);
+let person2 = new person("zafar",30);
+person.prototype.greet = function(){
+  console.log(`Hello, my name is ${this.name} and I am ${this.age}year old.`);
+}
   
+person1.greet();
+person2.greet();
+
+// Question no 8:-
 
