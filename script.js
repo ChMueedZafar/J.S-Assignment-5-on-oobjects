@@ -97,18 +97,42 @@ console.log(person1.address.city);
 
 // Question No 7:-
 
-function person (name,age){
-  this.name =name;
-  this.age= age;
-}
-let person1 = new person("mueed",18);
-let person2 = new person("zafar",30);
-person.prototype.greet = function(){
-  console.log(`Hello, my name is ${this.name} and I am ${this.age}year old.`);
-}
+// function person (name,age){
+//   this.name =name;
+//   this.age= age;
+// }
+// let person1 = new person("mueed",18);
+// let person2 = new person("zafar",30);
+// person.prototype.greet = function(){
+//   console.log(`Hello, my name is ${this.name} and I am ${this.age}year old.`);
+// }
   
-person1.greet();
-person2.greet();
+// person1.greet();
+// person2.greet();
 
 // Question no 8:-
 
+// const myobject1 = {name:"mueed",age:18};
+// const jsonstring =  JSON.stringify(myObject);
+// console.log(jsonstring);
+// Step 1: Create an object
+const myObject1 = {
+  name: "John",
+  age: 30,
+  isStudent: false,
+  courses: ["Math", "Science"],
+  address: {
+    street: "123 Main St",
+    city: "Anytown"
+  }
+};
+
+// Step 2: Convert the object to a JSON string
+const jsonString = JSON.stringify(myObject1);
+console.log("JSON String:", jsonString);
+// Output: JSON String: {"name":"John","age":30,"isStudent":false,"courses":["Math","Science"],"address":{"street":"123 Main St","city":"Anytown"}}
+
+// Step 3: Parse the JSON string back into an object
+const parsedObject = JSON.parse(jsonString);
+console.log("Parsed Object:", parsedObject);
+// Output: Parsed Object: { name: 'John', age: 30, isStudent: false, courses: [ 'Math', 'Science' ], address: { street: '123 Main St', city: 'Anytown' } }
