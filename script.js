@@ -27,15 +27,15 @@ let myobject ={
 console.log(myobject.calclueArea());
 
 //  Question no 4:-
-const person ={
+const person3 ={
     name : "mueed",
     age: 19,
     gerend: "Male",
     city : "jaranwala"
 }
-for (let key in person){
-if (person.hasOwnProperty(key)){
-    console.log(person[key]);
+for (let key in person3){
+if (person3.hasOwnProperty(key)){
+    console.log(person3[key]);
 }
 }
 
@@ -157,3 +157,48 @@ console.log(propertyNames);
 
 // Question no 11:-
 
+class Animal {
+  constructor(name){
+    this.name = name;
+  }
+  speak(){
+    console.log(`${this.name} makes a sound`);
+  }
+}
+
+class Dog extends Animal {
+  constructor (name,bread){
+    super(name);
+    this.bread = bread;
+  }
+  speak(){
+    console.log(`${this.name} barks.`);
+    
+  }
+}
+const dog = new Dog ('Rex','German Shepherd');
+dog.speak();
+
+// Question no 12:-
+
+const _name = Symbol('name');
+
+class Person {
+    constructor(name) {
+        this[_name] = name;
+    }
+
+    getName() {
+        return this[_name];
+    }
+
+    setName(newName) {
+        this[_name] = newName;
+    }
+}
+
+const person = new Person('Alice');
+console.log(person.getName());
+person.setName('Bob');
+console.log(person.getName()); 
+console.log(person[_name]); 
