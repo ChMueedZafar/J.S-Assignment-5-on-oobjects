@@ -97,18 +97,18 @@ console.log(person1.address.city);
 
 // Question No 7:-
 
-// function person (name,age){
-//   this.name =name;
-//   this.age= age;
-// }
-// let person1 = new person("mueed",18);
-// let person2 = new person("zafar",30);
-// person.prototype.greet = function(){
-//   console.log(`Hello, my name is ${this.name} and I am ${this.age}year old.`);
-// }
+function person (name,age){
+  this.name =name;
+  this.age= age;
+}
+let person1 = new person("mueed",18);
+let person2 = new person("zafar",30);
+person.prototype.greet = function(){
+  console.log(`Hello, my name is ${this.name} and I am ${this.age}year old.`);
+}
   
-// person1.greet();
-// person2.greet();
+person1.greet();
+person2.greet();
 
 // Question no 8:-
 const myObject1 = {
